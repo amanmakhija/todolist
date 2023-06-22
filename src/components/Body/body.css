@@ -1,0 +1,116 @@
+.body {
+    padding: 10vh 30vw 0;
+    background-color: #f5f5f5;
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.body-heading {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5vh;
+}
+
+.body-data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-checkbox {
+    width: 10%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-info {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.item-delete {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.item-delete:hover {
+    background-color: red;
+    color: #f5f5f5;
+}
+
+.body-add {
+    margin: 5vh 0;
+}
+
+.add-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 1rem;
+    padding: .7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-item:hover {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+.done {
+    text-decoration: line-through;
+    color: #333;
+}
+
+.empty-list {
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        padding: 20vh 5vw 0;
+    }
+}
