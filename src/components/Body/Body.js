@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './body.css'
 import axios from 'axios';
+import Loader from '../Loader/Loader';
 
 export default function Body() {
     const listName = window.location.pathname.split('/')[1];
@@ -89,8 +90,11 @@ export default function Body() {
                         </div>
                     )
                 })}
+                {listName && listData.length === 0 ? (
+                    <Loader props={listName} />
+                ) : null}
             </div>
-            {listData.length !== 0 ? (
+            {listName ? (
                 <div className='body-add'>
                     <button onClick={(e) => addItems(e)} className='add-item'><i className='fa fa-plus'></i></button>
                 </div>
